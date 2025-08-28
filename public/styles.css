@@ -1,0 +1,150 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 20px 40px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background: #96e0f3;
+  font-family: "Quicksand", sans-serif; /* Better to set globally */
+  color: #444;
+}
+
+h2,
+ul,
+li,
+a,
+p,
+input,
+label,
+button,
+div {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+
+.btn {
+  border-radius: 36px;
+  background: #fee996;
+  cursor: pointer;
+  border: none;
+}
+
+/* Form */
+form {
+  width: 360px;
+  margin: 90px auto; /* fixed missing px */
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box; /* avoids overflow */
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+}
+
+button {
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #fee996;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* Snackbar */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%); /* proper centering */
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+}
+
+/* Logout button */
+.btn-logout {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Center container */
+.container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.heading {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 1.25em;
+  color: #666;
+}
